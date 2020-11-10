@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import gitHub from "../assets/images/githubLogo.png";
 import linkedin from "../assets/images/link.png";
 import headShot from "../assets/images/Headshot.png";
+// import { Link } from "react-router-dom";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class Carousel extends React.Component {
           title: "Contact me",
           subTitle: "Lets work together!",
           imgSrc: headShot,
-          link: "",
+          link: "/about",
           selected: false,
         },
         {

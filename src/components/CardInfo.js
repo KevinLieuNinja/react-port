@@ -1,5 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
+import { Link } from "react-router-dom";
+
 function CardInfo(props) {
   const style = useSpring({
     opacity: 1,
@@ -10,9 +12,13 @@ function CardInfo(props) {
     <animated.div className="k-card-info" style={style}>
       <p className="k-card-title">{props.title}</p>
       <p className="k-card-sub-title">{props.subTitle}</p>
-      <a href={props.link} target="_blank" rel="noOpener noReferrer">
-        Check Out!
-      </a>
+      {props.link !== "/about" ? (
+        <a href={props.link} target="_blank" rel="noOpener noReferrer">
+          Check Out!
+        </a>
+      ) : (
+        <Link to={props.link}>About</Link>
+      )}
     </animated.div>
   );
 }
