@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Content from "../components/Content";
+import Exp from "../components/Exp";
 
 function AboutPage(props) {
   return (
@@ -15,10 +16,8 @@ function AboutPage(props) {
           second coding bootcamp by the end of this year. Through these
           bootcamps I have gained experience in:
         </p>
-        <p>
-          Vanilla JS | Node.js | React | React-Native | HTML/ CSS | MongoDB |
-          Bootstrap | Express | Python | other libraries and languages!
-        </p>
+        <Exp />
+        <br />
         <p>
           Yes, I do not know everything, but I am a dedicated learner and I am
           willing to go above and beyond to not only get the job done but to

@@ -16,11 +16,20 @@ code {
   margin: 20px;
 }
 
+
+
+
 .k-card-image {
   border-radius: 10px;
   width: 300px;
   height: 480px;
   box-shadow: 0px 0px 3px 1px #ccc;
+  transition: width 1s, height 1s;
+}
+
+.k-card-image:hover {
+  height: 450px;
+  width: 450px;
 }
 
 .k-card-info {
@@ -46,4 +55,22 @@ code {
 .err-msg {
   color: #cc0d0d;
   padding: 10px 15px;
+}
+
+.expImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expIcon {
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+  transition: width 1s, height 1s;
+}
+
+.expIcon:hover {
+  width: 200px;
+  height: 200px;
 }
